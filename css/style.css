@@ -4,7 +4,11 @@
     box-sizing: border-box;
 
 }
-
+:root{
+    --main-color: #100726;
+    --pink-color: #d80b8d;
+    --white-color: #fff;
+}
 
 a,
 ul,
@@ -18,10 +22,16 @@ li {
     height: 65px;
     object-fit: contain;
     text-align: left;
+    padding-top: 8px;
 }
-
+.stellarnav ul{
+    padding-top: 8px;
+}
 .nav-bar .stellarnav>ul>li>a {
-    padding: 20px 10px;
+    padding: 20px 15px;
+}
+.smedia-icon{
+    padding-top: 8px;
 }
 
 .nav-bar .stellarnav.dark {
@@ -29,7 +39,7 @@ li {
 }
 
 .nav-bar .stellarnav ul a {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "jost";
     color: #fff;
     text-transform: uppercase;
@@ -46,15 +56,16 @@ li {
 
 .fixed-top {
     position: fixed;
-    top: 40px;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
+    padding-bottom: 15px;
 }
 
 .nav-bar .stellarnav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 0px;
     position: relative;
 }
 
@@ -357,4 +368,180 @@ li {
     width: 100%;
     height: 485px;
     object-fit: contain;
+}
+
+/* --------------Additional service css --------- */
+.additionalsec{
+    background-color: var(--main-color);
+    padding-bottom: 3rem;
+}
+.additionalsec .servhdng{
+    padding-top: 40px;
+}
+.additionalsec .servhdng p{
+    color: var(--pink-color);
+}
+.additionalsec .servhdng h1{
+    color: var(--white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.additionalsec .servhdng .seccntnt{
+    color: var(--white-color);
+}
+.additionalsec .get-btn a{
+    padding: 6px 14px;
+}
+.additionalsec .card-box{
+    margin-top: 40px;
+}
+.additionalsec .card-box .content{
+    border: 1px solid var(--pink-color);
+}
+.additionalsec .card-box .content img{
+    text-align: center;
+    padding: 20px;
+}
+.additionalsec .card-box .content .cntnt-icon{
+    text-align: center;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition:  0.6s ease-out;
+    transition:  0.6s ease-out;
+}
+.additionalsec .card-box .content h4{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 22px;
+    font-family: jost;
+    font-weight: 700;
+}
+.additionalsec .card-box .content p {
+    color: #fff;
+    text-align: center;
+    padding: 10px 26px 22px 26px;
+    margin-bottom: 0;
+}
+
+/* --------------tribesec css start------------- */
+.tribesec{
+    background-color: var(--white-color);
+}
+.tribesec .tribehdng{
+    text-align: right;
+    padding: 30px;
+}
+.tribesec .tribehdng h1{
+    color: var(--pink-color);
+}
+.tribesec .tribehdng p{
+    color: #000;
+}
+.tribesec .sbcrb-box {
+    position: relative;
+    padding: 48px 118px 40px 40px;
+}
+.tribesec .sbcrb-btn {
+    position: absolute;
+    top: 48px;
+    right: 118px;
+    padding: 15px 20px;
+    background-color: var(--pink-color);
+}
+.tribesec .sbcrb-btn a{
+    color: var(--white-color);
+}
+
+.tribesec .sbcrb-fld input{
+    padding: 14px;
+    background-color: #f8d4e3;
+}
+.tribesec .form-control{
+    border-radius: 0;
+}
+.tribesec .form-control:focus{
+    border: 1px solid var(--pink-color);
+    box-shadow: 0 0 0 0.25rem rgb(253 13 187 / 25%);
+}
+
+/* ---------------Blog section css start------------ */
+
+.blogsec{
+    background-image: url("../images/footer-img.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 830px;
+}
+.blogsec .bloghdng{
+    padding-top: 40px;
+}
+.blogsec .bloghdng h1{
+    color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+.blogsec .bloghdng p{
+    color: var(--white-color);
+    text-align: center;
+}
+.blogsec .blog-box .blog-title h4{
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.blogsec .blog-box .blog-title p{
+    color: var(--white-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+.blogsec .blog-box{
+    margin-top: 50px;
+}
+.blogsec .ftr-cntct{
+   text-align: right;
+}
+.blogsec .ftr-cntct a{
+    color: var(--white-color);
+}
+.blogsec .ftr-cntct p{
+    color: var(--pink-color);
+    margin-bottom: 0;
+}
+.blogsec .contact{
+    text-align: left;
+}
+.blogsec .contact a{
+    color: var(--white-color);
+}
+.blogsec .ftr-logo img{
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+}
+.blogsec .contactsec{
+    padding-top: 90px;
+}
+.blogsec .media-icon ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.blogsec .media-icon{
+    padding-top: 80px;
+}
+.blogsec .media-icon ul li a{
+    color: var(--white-color);
+}
+footer{
+    background-color: #160048;
+}
+footer .copyright{
+    padding: 20px;
+}
+footer .copyright p{
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+footer .copyright p span{
+    color: var(--pink-color);
 }
