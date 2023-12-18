@@ -49,3 +49,14 @@ body{
     transform: rotate(360deg);
     box-shadow: 2px 2px 24px #fff;
 }
+.glow-container {
+    display: inline-block;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Apply the glowing effect on hover */
+.glow-container:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 223, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
